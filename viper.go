@@ -532,10 +532,10 @@ func (v *Viper) GetEnvPrefix() string {
 
 func (v *Viper) mergeWithEnvPrefix(in string) string {
 	if v.envPrefix != "" {
-		return strings.ToUpper(v.envPrefix + "_" + in)
+		return v.envPrefix + "_" + in
 	}
 
-	return strings.ToUpper(in)
+	return in
 }
 
 // AllowEmptyEnv tells Viper to consider set,
