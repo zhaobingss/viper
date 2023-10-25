@@ -14,7 +14,7 @@ import (
 
 	crypt "github.com/sagikazarmark/crypt/config"
 
-	"github.com/spf13/viper"
+	"github.com/zhaobingss/viper"
 )
 
 type remoteConfigProvider struct{}
